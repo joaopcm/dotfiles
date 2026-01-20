@@ -7,6 +7,9 @@ brew "bat"
 brew "eza"
 brew "ripgrep"
 brew "jq"
+brew "btop"
+brew "gh"
+brew "displayplacer"
 
 # AWS/Cloud
 brew "granted"
@@ -19,3 +22,7 @@ cask "orbstack"
 
 # Window manager
 cask "aerospace"
+
+# Display & input
+cask "betterdisplay"
+cask "mac-mouse-fix"

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSWindow Frame MyWindow</key>
+	<string>2207 576 370 304 0 0 3440 1409 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>1520 952 400 139 0 0 3440 1409 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>1410 758 620 398 0 0 3440 1409 </string>
+	<key>SUAutomaticallyUpdate</key>
+	<false/>
+	<key>SUEnableAutomaticChecks</key>
+	<false/>
+	<key>SUFeedURL</key>
+	<string>https://raw.githubusercontent.com/noah-nuebling/mac-mouse-fix/update-feed/appcast.xml</string>
+	<key>SUHasLaunchedBefore</key>
+	<true/>
+	<key>SULastCheckTime</key>
+	<date>2025-11-11T20:22:53Z</date>
+	<key>SUUpdateRelaunchingMarker</key>
+	<false/>
+</dict>
+</plist>

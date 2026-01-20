@@ -36,6 +36,12 @@ link "$DOTFILES_DIR/claude/file-suggestion.sh" "$HOME/.claude/file-suggestion.sh
 
 chmod +x "$DOTFILES_DIR/claude/file-suggestion.sh"
 
+echo "Importing app preferences..."
+# BetterDisplay
+cp "$DOTFILES_DIR/preferences/pro.betterdisplay.BetterDisplay.plist" "$HOME/Library/Preferences/"
+# Mac Mouse Fix
+cp "$DOTFILES_DIR/preferences/com.nuebling.mac-mouse-fix.plist" "$HOME/Library/Preferences/"
+
 echo "Setting fish as default shell..."
 FISH_PATH="$(which fish)"
 if ! grep -q "$FISH_PATH" /etc/shells; then
