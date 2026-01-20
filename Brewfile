@@ -10,6 +10,7 @@ brew "jq"
 brew "btop"
 brew "gh"
 brew "displayplacer"
+brew "mole"
 
 # AWS/Cloud
 brew "granted"
