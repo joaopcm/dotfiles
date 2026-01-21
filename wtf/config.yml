@@ -1,0 +1,29 @@
+wtf:
+  colors:
+    border:
+      focusable: darkslateblue
+      focused: orange
+      normal: gray
+  grid:
+    columns: [32, 32, 32, 32]
+    rows: [10, 10, 10]
+  refreshInterval: 1
+  mods:
+    clocks:
+      colors:
+        rows:
+          even: white
+          odd: gray
+      enabled: true
+      locations:
+        UTC: "Etc/UTC"
+        Local: "Local"
+      position:
+        top: 0
+        left: 0
+        height: 1
+        width: 1
+      refreshInterval: 15
+      sort: alphabetical
+      title: "Clocks"
+      type: clocks

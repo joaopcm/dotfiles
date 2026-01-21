@@ -35,6 +35,7 @@ link "$DOTFILES_DIR/claude/rules" "$HOME/.claude/rules"
 link "$DOTFILES_DIR/claude/file-suggestion.sh" "$HOME/.claude/file-suggestion.sh"
 link "$DOTFILES_DIR/lazygit/config.yml" "$HOME/Library/Application Support/lazygit/config.yml"
 link "$DOTFILES_DIR/lazydocker/config.yml" "$HOME/Library/Application Support/jesseduffield/lazydocker/config.yml"
+link "$DOTFILES_DIR/wtf/config.yml" "$HOME/.config/wtf/config.yml"
 
 chmod +x "$DOTFILES_DIR/claude/file-suggestion.sh"
 
