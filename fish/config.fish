@@ -21,6 +21,12 @@ starship init fish | source
 # Zoxide
 zoxide init fish | source
 
+# Thefuck (lazy-loaded)
+function fuck
+    thefuck --alias | source
+    fuck $argv
+end
+
 # Fzf
 fzf --fish | source
 
