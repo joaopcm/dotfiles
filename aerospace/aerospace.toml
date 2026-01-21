@@ -82,10 +82,10 @@ run = "move-node-to-workspace 1"
 
 # --- Workspace 2 ---
 
-# Cursor
+# Cursor (uses script to stack multiple windows in accordion)
 [[on-window-detected]]
 if.app-id = 'com.todesktop.230313mzl4w4u92'
-run = "move-node-to-workspace 2"
+run = "exec-and-forget ~/Developer/personal/dotfiles/scripts/cursor-window-handler.sh"
 
 # iTerm2
 [[on-window-detected]]
