@@ -8,6 +8,7 @@ alias cd="z"
 alias g="git"
 alias lg="lazygit"
 alias ld="lazydocker"
+alias try="try-rs"
 alias gp="g p"
 alias gaic="g diff | pbcopy; open raycast://ai-commands/write-commit-message"
 alias gitconfig="cursor ./git/config"
@@ -47,6 +48,7 @@ set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
 fish_add_path $HOME/.local/bin
+fish_add_path $HOME/.cargo/bin
 
 set -gx VOLTA_HOME "$HOME/.volta"
 set -gx PATH "$VOLTA_HOME/bin" $PATH

@@ -21,4 +21,7 @@ if ! command -v bun &> /dev/null; then
     curl -fsSL https://bun.sh/install | bash
 fi
 
+echo "Installing try-rs..."
+cargo install try-rs
+
 echo "Done! Run ./setup.sh to create symlinks."

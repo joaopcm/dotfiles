@@ -1,4 +1,5 @@
 # Core tools
+brew "rust"
 brew "fish"
 brew "starship"
 brew "zoxide"
