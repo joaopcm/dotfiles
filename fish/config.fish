@@ -57,3 +57,8 @@ function wtf
     set -gx WTF_TODOIST_TOKEN (op read "op://Personal/Todoist API key/credential")
     wtfutil $argv
 end
+
+# Default directory
+if status is-interactive && test "$PWD" = "$HOME"
+    cd ~/Developer
+end
