@@ -5,25 +5,172 @@ wtf:
       focused: orange
       normal: gray
   grid:
-    columns: [32, 32, 32, 32]
-    rows: [10, 10, 10]
-  refreshInterval: 1
+    columns: [40, 40, 40, 40]
+    rows: [12, 12, 12, 12]
+  refreshInterval: 1s
   mods:
     clocks:
+      type: clocks
+      enabled: true
       colors:
         rows:
-          even: white
-          odd: gray
-      enabled: true
+          even: lightblue
+          odd: white
       locations:
         UTC: "Etc/UTC"
-        Local: "Local"
+        San Francisco: "America/Los_Angeles"
+        São Paulo: "America/Sao_Paulo"
+        South Africa: "Africa/Johannesburg"
+        Portugal: "Europe/Lisbon"
+        Montreal: "America/Montreal"
+        New York: "America/New_York"
+        New Zealand: "Pacific/Auckland"
       position:
         top: 0
         left: 0
         height: 1
         width: 1
-      refreshInterval: 15
-      sort: alphabetical
-      title: "Clocks"
-      type: clocks
+      refreshInterval: 15s
+      sort: chronological
+
+    ipapi:
+      type: ipapi
+      enabled: true
+      colors:
+        name: lightblue
+        value: white
+      args:
+        - "ip"
+        - "isp"
+        - "as"
+        - "city"
+        - "regionName"
+        - "country"
+        - "continent"
+        - "coordinates"
+        - "organization"
+        - "timezone"
+        - "reverseDNS"
+      position:
+        top: 0
+        left: 1
+        height: 1
+        width: 2
+      refreshInterval: 5m
+
+    hackernews:
+      type: hackernews
+      enabled: true
+      numberOfStories: 10
+      storyType: top
+      position:
+        top: 0
+        left: 3
+        height: 1
+        width: 2
+      refreshInterval: 15m
+
+    docker:
+      type: docker
+      enabled: true
+      labelColor: lightblue
+      position:
+        top: 1
+        left: 0
+        height: 2
+        width: 1
+      refreshInterval: 1s
+
+    git:
+      type: git
+      commitCount: 14
+      commitFormat: "[forestgreen]%h [grey]%cd [white]%s [grey]%an[white]"
+      dateFormat: "%H:%M %d %b %y"
+      enabled: true
+      repositories:
+        - "/Users/joaomelo/Developer/resend/resend"
+        - "/Users/joaomelo/Developer/resend/resend-monorepo"
+        - "/Users/joaomelo/Developer/resend/resend-node"
+        - "/Users/joaomelo/Developer/resend/resend-docs"
+        - "/Users/joaomelo/Developer/personal/bugdet.co"
+        - "/Users/joaomelo/Developer/personal/terminal-website"
+        - "/Users/joaomelo/Developer/personal/dotfiles"
+      position:
+        top: 1
+        left: 1
+        height: 2
+        width: 2
+      refreshInterval: 8s
+
+    github:
+      type: github
+      enabled: true
+      enableStatus: true
+      showStats: true
+      repositories:
+        - "resend/resend"
+        - "resend/resend-monorepo"
+        - "resend/resend-node"
+        - "resend/resend-docs"
+        - "joaomelo/bugdet.co"
+        - "joaomelo/terminal-website"
+        - "joaomelo/dotfiles"
+      username: "joaopcm"
+      position:
+        top: 1
+        left: 3
+        height: 2
+        width: 2
+      refreshInterval: 5m
+
+    resourceusage:
+      type: resourceusage
+      enabled: true
+      cpuCombined: true
+      showCPU: true
+      showMem: true
+      showSwp: true
+      position:
+        top: 3
+        left: 0
+        height: 1
+        width: 1
+      refreshInterval: 1s
+
+    gcal:
+      type: gcal
+      enabled: false
+      colors:
+        title: red
+        eventTime: lightblue
+        description: yellow
+        past: gray
+      conflictIcon: "🚨"
+      currentIcon: "💥"
+      displayResponseStatus: true
+      email: "joao@resend.com"
+      eventCount: 10
+      hourFormat: "24"
+      multiCalendar: true
+      position:
+        top: 3
+        left: 1
+        height: 1
+        width: 1
+      refreshInterval: 5m
+      secretFile: "~/.config/wtf/gcal/client_secret.json"
+      showDeclined: false
+      showEndTime: true
+      withLocation: true
+
+    todoist:
+      type: todoist
+      enabled: true
+      projects:
+        - 2319802420
+      position:
+        top: 3
+        left: 1
+        height: 1
+        width: 2
+      refreshInterval: 1h

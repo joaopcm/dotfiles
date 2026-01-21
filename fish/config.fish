@@ -9,7 +9,6 @@ alias g="git"
 alias lg="lazygit"
 alias ld="lazydocker"
 alias gp="g p"
-alias wtf="wtfutil"
 alias gaic="g diff | pbcopy; open raycast://ai-commands/write-commit-message"
 alias gitconfig="cursor ./git/config"
 alias fishconfig="cursor ./fish/config.fish"
@@ -51,3 +50,10 @@ fish_add_path $HOME/.local/bin
 
 set -gx VOLTA_HOME "$HOME/.volta"
 set -gx PATH "$VOLTA_HOME/bin" $PATH
+
+# WTF Dashboard (lazy-loaded)
+function wtf
+    set -gx WTF_GITHUB_TOKEN (op read "op://Personal/wtf GitHub token/credential")
+    set -gx WTF_TODOIST_TOKEN (op read "op://Personal/Todoist API key/credential")
+    wtfutil $argv
+end
