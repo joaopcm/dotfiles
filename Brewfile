@@ -20,6 +20,7 @@ brew "httpie"
 brew "thefuck"
 brew "wtfutil"
 brew "hyperfine"
+brew "tlrc"
 
 # AWS/Cloud
 brew "granted"
