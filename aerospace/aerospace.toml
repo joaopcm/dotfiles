@@ -103,3 +103,8 @@ run = "move-node-to-workspace 2"
 [[on-window-detected]]
 if.app-id = 'com.mimestream.Mimestream'
 run = "move-node-to-workspace 3"
+
+# Amie
+[[on-window-detected]]
+if.app-id = 'so.amie.electron-app-setapp'
+run = "move-node-to-workspace 3"
