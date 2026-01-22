@@ -24,4 +24,12 @@ fi
 echo "Installing try-rs..."
 cargo install try-rs
 
+echo "Installing git-worktree-runner..."
+GTR_DIR="$HOME/.local/share/git-worktree-runner"
+if [ ! -d "$GTR_DIR" ]; then
+    git clone https://github.com/coderabbitai/git-worktree-runner.git "$GTR_DIR"
+fi
+git -C "$GTR_DIR" pull
+"$GTR_DIR/install.sh"
+
 echo "Done! Run ./setup.sh to create symlinks."
