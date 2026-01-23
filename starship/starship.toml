@@ -1,4 +1,5 @@
 command_timeout = 10000
+scan_timeout = 10000
 
 format = """
 $username\
