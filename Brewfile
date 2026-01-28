@@ -21,6 +21,7 @@ brew "thefuck"
 brew "wtfutil"
 brew "hyperfine"
 brew "tlrc"
+brew "frpc"
 
 # AWS/Cloud
 brew "granted"
