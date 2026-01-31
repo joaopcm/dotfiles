@@ -97,6 +97,10 @@ customDomains = [\"$subdomain.frp.jopcmelo.dev\"]" > $config_file
     rm $config_file
 end
 
+# Editor
+set -gx EDITOR cursor
+set -gx VISUAL cursor
+
 # Default directory
 if status is-interactive && test "$PWD" = "$HOME"
     cd ~/Developer

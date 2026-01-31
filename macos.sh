@@ -122,6 +122,55 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
 # =============================================================================
+# Default Editor (Cursor)
+# =============================================================================
+
+# Set Cursor as default for code files
+CURSOR_ID="com.todesktop.230313mzl4w4u92"
+
+# Programming languages
+duti -s "$CURSOR_ID" .c all 2>/dev/null
+duti -s "$CURSOR_ID" .cpp all 2>/dev/null
+duti -s "$CURSOR_ID" .h all 2>/dev/null
+duti -s "$CURSOR_ID" .py all 2>/dev/null
+duti -s "$CURSOR_ID" .js all 2>/dev/null
+duti -s "$CURSOR_ID" .ts all 2>/dev/null
+duti -s "$CURSOR_ID" .jsx all 2>/dev/null
+duti -s "$CURSOR_ID" .tsx all 2>/dev/null
+duti -s "$CURSOR_ID" .go all 2>/dev/null
+duti -s "$CURSOR_ID" .rs all 2>/dev/null
+duti -s "$CURSOR_ID" .java all 2>/dev/null
+duti -s "$CURSOR_ID" .php all 2>/dev/null
+duti -s "$CURSOR_ID" .rb all 2>/dev/null
+duti -s "$CURSOR_ID" .swift all 2>/dev/null
+
+# Config/markup
+duti -s "$CURSOR_ID" .json all 2>/dev/null
+duti -s "$CURSOR_ID" .yaml all 2>/dev/null
+duti -s "$CURSOR_ID" .yml all 2>/dev/null
+duti -s "$CURSOR_ID" .toml all 2>/dev/null
+duti -s "$CURSOR_ID" .xml all 2>/dev/null
+duti -s "$CURSOR_ID" .md all 2>/dev/null
+duti -s "$CURSOR_ID" .txt all 2>/dev/null
+
+# Shell/scripts
+duti -s "$CURSOR_ID" .sh all 2>/dev/null
+duti -s "$CURSOR_ID" .bash all 2>/dev/null
+duti -s "$CURSOR_ID" .zsh all 2>/dev/null
+duti -s "$CURSOR_ID" .fish all 2>/dev/null
+duti -s "$CURSOR_ID" public.shell-script all 2>/dev/null
+
+# Web
+duti -s "$CURSOR_ID" .html all 2>/dev/null
+duti -s "$CURSOR_ID" .css all 2>/dev/null
+duti -s "$CURSOR_ID" .scss all 2>/dev/null
+
+# Misc
+duti -s "$CURSOR_ID" .env all 2>/dev/null
+duti -s "$CURSOR_ID" .gitignore all 2>/dev/null
+duti -s "$CURSOR_ID" public.plain-text all 2>/dev/null
+
+# =============================================================================
 # Display Scaling
 # =============================================================================
 

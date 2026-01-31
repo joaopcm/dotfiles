@@ -22,6 +22,7 @@ brew "wtfutil"
 brew "hyperfine"
 brew "tlrc"
 brew "frpc"
+brew "duti"
 
 # AWS/Cloud
 brew "granted"

@@ -73,14 +73,14 @@ alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
-# --- Workspace 1 ---
+# --- Workspace 1 (Browsing) ---
 
 # Dia
 [[on-window-detected]]
 if.app-id = 'company.thebrowser.dia'
 run = "move-node-to-workspace 1"
 
-# --- Workspace 2 ---
+# --- Workspace 2 (Coding) ---
 
 # Cursor (uses script to stack multiple windows in accordion)
 [[on-window-detected]]
@@ -97,7 +97,7 @@ run = "move-node-to-workspace 2"
 if.app-id = 'app.yaak.desktop'
 run = "move-node-to-workspace 2"
 
-# --- Workspace 3 ---
+# --- Workspace 3 (Admin) ---
 
 # Mimestream
 [[on-window-detected]]
@@ -107,4 +107,9 @@ run = "move-node-to-workspace 3"
 # Amie
 [[on-window-detected]]
 if.app-id = 'so.amie.electron-app-setapp'
+run = "move-node-to-workspace 3"
+
+# Claude
+[[on-window-detected]]
+if.app-id = 'com.anthropic.claudefordesktop'
 run = "move-node-to-workspace 3"
