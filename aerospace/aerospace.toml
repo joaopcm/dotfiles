@@ -80,6 +80,11 @@ alt-shift-l = ['join-with right', 'mode main']
 if.app-id = 'company.thebrowser.dia'
 run = "move-node-to-workspace 1"
 
+# Chrome
+[[on-window-detected]]
+if.app-id = 'com.google.Chrome'
+run = "move-node-to-workspace 1"
+
 # --- Workspace 2 (Coding) ---
 
 # Cursor (uses script to stack multiple windows in accordion)
