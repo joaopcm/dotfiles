@@ -1,4 +1,5 @@
 - In all interactions and commit messages, be extremely concise and sacrifice grammar for the sake of concision.
+- Use the `gh` CLI to connect to GitHub and perform actions or retrieve information
 
 ## Plan
 
