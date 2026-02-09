@@ -75,11 +75,6 @@ alt-shift-l = ['join-with right', 'mode main']
 
 # --- Workspace 1 (Browsing) ---
 
-# Dia
-[[on-window-detected]]
-if.app-id = 'company.thebrowser.dia'
-run = "move-node-to-workspace 1"
-
 # Chrome
 [[on-window-detected]]
 if.app-id = 'com.google.Chrome'
@@ -87,7 +82,7 @@ run = "move-node-to-workspace 1"
 
 # --- Workspace 2 (Coding) ---
 
-# Cursor (uses script to stack multiple windows in accordion)
+# Cursor
 [[on-window-detected]]
 if.app-id = 'com.todesktop.230313mzl4w4u92'
 run = "move-node-to-workspace 2"
@@ -102,26 +97,89 @@ run = "move-node-to-workspace 2"
 if.app-id = 'app.yaak.desktop'
 run = "move-node-to-workspace 2"
 
-# --- Workspace 3 (Admin) ---
+# --- Workspace 3 (Messaging) ---
+
+# Slack
+[[on-window-detected]]
+if.app-id = 'com.tinyspeck.slackmacgap'
+run = "move-node-to-workspace 3"
+
+# Discord
+[[on-window-detected]]
+if.app-id = 'com.hnc.Discord'
+run = "move-node-to-workspace 3"
+
+# WhatsApp
+[[on-window-detected]]
+if.app-id = 'net.whatsapp.WhatsApp'
+run = "move-node-to-workspace 3"
+
+# --- Workspace 4 (Email & Calendar) ---
 
 # Mimestream
 [[on-window-detected]]
 if.app-id = 'com.mimestream.Mimestream'
-run = "move-node-to-workspace 3"
+run = "move-node-to-workspace 4"
+
+# Notion Calendar
+[[on-window-detected]]
+if.app-id = 'com.cron.electron'
+run = "move-node-to-workspace 4"
 
 # Amie
 [[on-window-detected]]
 if.app-id = 'so.amie.electron-app-setapp'
-run = "move-node-to-workspace 3"
+run = "move-node-to-workspace 4"
+
+# --- Workspace 5 (Productivity) ---
+
+# Linear
+[[on-window-detected]]
+if.app-id = 'com.linear'
+run = "move-node-to-workspace 5"
+
+# Todoist
+[[on-window-detected]]
+if.app-id = 'com.todoist.mac.Todoist'
+run = "move-node-to-workspace 5"
+
+# Notion
+[[on-window-detected]]
+if.app-id = 'notion.id'
+run = "move-node-to-workspace 5"
+
+# --- Workspace 6 (AI & Knowledge) ---
 
 # Claude
 [[on-window-detected]]
 if.app-id = 'com.anthropic.claudefordesktop'
-run = "move-node-to-workspace 3"
+run = "move-node-to-workspace 6"
 
-# --- Workspace 4 (Misc) ---
+# ChatGPT
+[[on-window-detected]]
+if.app-id = 'com.openai.chat'
+run = "move-node-to-workspace 6"
 
-# Music
+# MyMind
+[[on-window-detected]]
+if.app-id = 'com.mymind.mymind-mac'
+run = "move-node-to-workspace 6"
+
+# --- Workspace 7 (Design & Data) ---
+
+# Figma
+[[on-window-detected]]
+if.app-id = 'com.figma.Desktop'
+run = "move-node-to-workspace 7"
+
+# TablePlus
+[[on-window-detected]]
+if.app-id = 'com.tinyapp.TablePlus-setapp'
+run = "move-node-to-workspace 7"
+
+# --- Workspace 8 (Media) ---
+
+# Apple Music
 [[on-window-detected]]
 if.app-id = 'com.apple.Music'
-run = "move-node-to-workspace 4"
+run = "move-node-to-workspace 8"
