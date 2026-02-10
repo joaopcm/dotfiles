@@ -1,3 +1,6 @@
+# Taps
+tap "anomalyco/tap"
+
 # Core tools
 brew "rust"
 brew "fish"
@@ -23,6 +26,7 @@ brew "hyperfine"
 brew "tlrc"
 brew "frpc"
 brew "duti"
+brew "opencode"
 
 # AWS/Cloud
 brew "granted"
