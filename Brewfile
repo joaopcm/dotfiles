@@ -1,5 +1,6 @@
 # Taps
 tap "anomalyco/tap"
+tap "marcus/tap"
 
 # Core tools
 brew "rust"
@@ -27,6 +28,7 @@ brew "tlrc"
 brew "frpc"
 brew "duti"
 brew "opencode"
+brew "marcus/tap/nightshift"
 
 # AWS/Cloud
 brew "granted"
