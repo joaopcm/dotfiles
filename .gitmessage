@@ -1,0 +1,11 @@
+
+# Conventional Commits — type(scope): description
+#
+# types: feat fix docs style refactor perf test build ci chore revert
+# scope: optional, lowercase (e.g. fish, git, aerospace)
+# description: imperative, lowercase, no period
+#
+# examples:
+#   feat: add nightshift to my setup
+#   fix(fish): correct path ordering
+#   chore: update brewfile dependencies

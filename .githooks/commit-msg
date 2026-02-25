@@ -1,0 +1,26 @@
+#!/bin/bash
+
+msg=$(head -1 "$1")
+
+# Allow git-generated messages (merge, revert, etc.)
+if echo "$msg" | grep -qE '^(Merge|Revert|Rebase|fixup!|squash!|amend!) '; then
+  exit 0
+fi
+
+# Allow WIP/SAVEPOINT/WIPE from aliases
+if echo "$msg" | grep -qE '^(WIP|SAVEPOINT|WIPE SAVEPOINT)$'; then
+  exit 0
+fi
+
+# Conventional Commits: type(scope): desc  or  type: desc
+if ! echo "$msg" | grep -qE '^[a-z]+(\([a-z0-9._-]+\))?!?: .+'; then
+  echo "ERROR: commit message must follow Conventional Commits"
+  echo ""
+  echo "  type: description"
+  echo "  type(scope): description"
+  echo ""
+  echo "  types: feat fix docs style refactor perf test build ci chore revert"
+  echo ""
+  echo "  got: $msg"
+  exit 1
+fi

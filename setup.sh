@@ -27,6 +27,7 @@ echo "Creating symlinks..."
 link "$DOTFILES_DIR/fish/config.fish" "$HOME/.config/fish/config.fish"
 link "$DOTFILES_DIR/git/config" "$HOME/.gitconfig"
 link "$DOTFILES_DIR/git/ignore" "$HOME/.config/git/ignore"
+link "$DOTFILES_DIR/.gitmessage" "$HOME/.gitmessage"
 link "$DOTFILES_DIR/starship/starship.toml" "$HOME/.config/starship.toml"
 link "$DOTFILES_DIR/aerospace/aerospace.toml" "$HOME/.config/aerospace/aerospace.toml"
 link "$DOTFILES_DIR/claude/settings.json" "$HOME/.claude/settings.json"
@@ -39,6 +40,9 @@ link "$DOTFILES_DIR/wtf/config.yml" "$HOME/.config/wtf/config.yml"
 link "$DOTFILES_DIR/try-rs/config.toml" "$HOME/Library/Application Support/try-rs/config.toml"
 
 chmod +x "$DOTFILES_DIR/claude/file-suggestion.sh"
+chmod +x "$DOTFILES_DIR/.githooks/commit-msg"
+
+git -C "$DOTFILES_DIR" config core.hooksPath .githooks
 
 echo "Importing app preferences..."
 # BetterDisplay

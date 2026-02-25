@@ -4,6 +4,7 @@
 	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 [commit]
 	gpgsign = true
+	template = ~/.gitmessage
 [user]
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFLbhM2MVLj812MkWJnarSSiKywdAzc75pD6kedpX3Ab
 	email = jopcmelo@gmail.com
