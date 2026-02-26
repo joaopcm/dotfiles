@@ -75,9 +75,9 @@ alt-shift-l = ['join-with right', 'mode main']
 
 # --- Workspace 1 (Browsing) ---
 
-# Chrome
+# Helium
 [[on-window-detected]]
-if.app-id = 'com.google.Chrome'
+if.app-id = 'net.imput.helium'
 run = "move-node-to-workspace 1"
 
 # --- Workspace 2 (Coding) ---
