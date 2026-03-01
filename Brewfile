@@ -28,6 +28,7 @@ brew "tlrc"
 brew "frpc"
 brew "duti"
 brew "opencode"
+brew "switchaudio-osx"
 brew "marcus/tap/nightshift"
 
 # AWS/Cloud

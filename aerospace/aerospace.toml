@@ -97,6 +97,11 @@ run = "move-node-to-workspace 2"
 if.app-id = 'app.yaak.desktop'
 run = "move-node-to-workspace 2"
 
+# Conductor
+[[on-window-detected]]
+if.app-id = 'com.conductor.app'
+run = "move-node-to-workspace 2"
+
 # --- Workspace 3 (Messaging) ---
 
 # Slack
