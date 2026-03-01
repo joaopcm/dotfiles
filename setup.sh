@@ -37,14 +37,19 @@ link "$DOTFILES_DIR/lazygit/config.yml" "$HOME/Library/Application Support/lazyg
 link "$DOTFILES_DIR/lazydocker/config.yml" "$HOME/Library/Application Support/jesseduffield/lazydocker/config.yml"
 link "$DOTFILES_DIR/wtf/config.yml" "$HOME/.config/wtf/config.yml"
 link "$DOTFILES_DIR/try-rs/config.toml" "$HOME/Library/Application Support/try-rs/config.toml"
-
 chmod +x "$DOTFILES_DIR/claude/file-suggestion.sh"
+chmod +x "$DOTFILES_DIR/scripts/force-audio-input.sh"
 
 echo "Importing app preferences..."
 # BetterDisplay
 cp "$DOTFILES_DIR/preferences/pro.betterdisplay.BetterDisplay.plist" "$HOME/Library/Preferences/"
 # Mac Mouse Fix
 cp "$DOTFILES_DIR/preferences/com.nuebling.mac-mouse-fix.plist" "$HOME/Library/Preferences/"
+
+echo "Installing launch agents..."
+sed "s|__DOTFILES_DIR__|$DOTFILES_DIR|g" "$DOTFILES_DIR/launchagents/com.jopcmelo.force-audio-input.plist" > "$HOME/Library/LaunchAgents/com.jopcmelo.force-audio-input.plist"
+launchctl unload "$HOME/Library/LaunchAgents/com.jopcmelo.force-audio-input.plist" 2>/dev/null || true
+launchctl load "$HOME/Library/LaunchAgents/com.jopcmelo.force-audio-input.plist"
 
 echo "Setting fish as default shell..."
 FISH_PATH="$(which fish)"
