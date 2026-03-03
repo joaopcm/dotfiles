@@ -105,3 +105,9 @@ set -gx VISUAL cursor
 if status is-interactive && test "$PWD" = "$HOME"
     cd ~/Developer
 end
+
+# Added by git-ai installer on seg  2 mar 2026 09:52:35 -03
+fish_add_path -g "/Users/jopcmelo/.git-ai/bin"
+
+# cubic
+fish_add_path /Users/jopcmelo/.cubic/bin
