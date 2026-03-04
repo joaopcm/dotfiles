@@ -1,6 +1,7 @@
 # Taps
 tap "anomalyco/tap"
 tap "marcus/tap"
+tap "schpet/tap"
 
 # Core tools
 brew "rust"
@@ -30,6 +31,7 @@ brew "duti"
 brew "opencode"
 brew "switchaudio-osx"
 brew "marcus/tap/nightshift"
+brew "schpet/tap/linear"
 
 # AWS/Cloud
 brew "granted"
