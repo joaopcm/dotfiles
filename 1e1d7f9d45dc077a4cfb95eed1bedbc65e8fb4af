@@ -1,0 +1,29 @@
+install.sh
+  6d12ed733146e681 35-43
+README.md
+  6d12ed733146e681 13-19,85,94-99
+setup.sh
+  6d12ed733146e681 40-55
+CLAUDE.md
+  6d12ed733146e681 27-29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.8",
+  "base_commit_sha": "1e1d7f9d45dc077a4cfb95eed1bedbc65e8fb4af",
+  "prompts": {
+    "6d12ed733146e681": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e37b07f1-76d4-44eb-a342-bce7352c36ef",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "João Melo <jopcmelo@gmail.com>",
+      "messages": [],
+      "total_additions": 42,
+      "total_deletions": 2,
+      "accepted_lines": 42,
+      "overriden_lines": 0
+    }
+  }
+}
