@@ -37,6 +37,22 @@ link "$DOTFILES_DIR/lazygit/config.yml" "$HOME/Library/Application Support/lazyg
 link "$DOTFILES_DIR/lazydocker/config.yml" "$HOME/Library/Application Support/jesseduffield/lazydocker/config.yml"
 link "$DOTFILES_DIR/wtf/config.yml" "$HOME/.config/wtf/config.yml"
 link "$DOTFILES_DIR/try-rs/config.toml" "$HOME/Library/Application Support/try-rs/config.toml"
+link "$DOTFILES_DIR/opencode/opencode.json" "$HOME/.config/opencode/opencode.json"
+link "$DOTFILES_DIR/opencode/ocx.jsonc" "$HOME/.config/opencode/ocx.jsonc"
+link "$DOTFILES_DIR/opencode/package.json" "$HOME/.config/opencode/package.json"
+link "$DOTFILES_DIR/opencode/plugin/git-ai.ts" "$HOME/.config/opencode/plugin/git-ai.ts"
+link "$DOTFILES_DIR/opencode/plugins/superpowers.js" "$HOME/.config/opencode/plugins/superpowers.js"
+link "$DOTFILES_DIR/opencode/plugins/env-protection.js" "$HOME/.config/opencode/plugins/env-protection.js"
+link "$DOTFILES_DIR/opencode/profiles/default/AGENTS.md" "$HOME/.config/opencode/profiles/default/AGENTS.md"
+link "$DOTFILES_DIR/opencode/profiles/default/ocx.jsonc" "$HOME/.config/opencode/profiles/default/ocx.jsonc"
+link "$DOTFILES_DIR/opencode/profiles/default/opencode.jsonc" "$HOME/.config/opencode/profiles/default/opencode.jsonc"
+mkdir -p "$HOME/.config/opencode/skills"
+ln -sfn "$HOME/.config/opencode/superpowers/skills" "$HOME/.config/opencode/skills/superpowers"
+link "$DOTFILES_DIR/agents/.skill-lock.json" "$HOME/.agents/.skill-lock.json"
+for skill in "$DOTFILES_DIR/agents/skills"/*/; do
+    skill_name="$(basename "$skill")"
+    link "$skill" "$HOME/.agents/skills/$skill_name"
+done
 chmod +x "$DOTFILES_DIR/claude/file-suggestion.sh"
 chmod +x "$DOTFILES_DIR/scripts/force-audio-input.sh"
 

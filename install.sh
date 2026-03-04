@@ -32,4 +32,13 @@ fi
 git -C "$GTR_DIR" pull
 "$GTR_DIR/install.sh"
 
+echo "Installing ocx..."
+if ! command -v ocx &> /dev/null; then
+    curl -fsSL https://ocx.kdco.dev/install.sh | sh
+fi
+
+echo "Installing opencode plugins..."
+cd "$HOME/.config/opencode" && bun install
+ocx update --all
+
 echo "Done! Run ./setup.sh to create symlinks."

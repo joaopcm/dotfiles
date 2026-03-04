@@ -24,6 +24,9 @@ Dotfiles repo for macOS. Each tool has its own directory with config files. `set
 - `lazygit/config.yml` → `~/Library/Application Support/lazygit/config.yml`
 - `lazydocker/config.yml` → `~/Library/Application Support/jesseduffield/lazydocker/config.yml`
 - `wtf/config.yml` → `~/.config/wtf/config.yml`
+- `opencode/*` → `~/.config/opencode/` (individual config files)
+- `agents/.skill-lock.json` → `~/.agents/.skill-lock.json`
+- `agents/skills/*` → `~/.agents/skills/*`
 
 **Copied (not symlinked):**
 - `preferences/*.plist` → `~/Library/Preferences/`
