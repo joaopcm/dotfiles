@@ -1,0 +1,25 @@
+Brewfile
+  5e62f648461b654a 4,34
+fish/config.fish
+  5e62f648461b654a 114-118
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.7",
+  "base_commit_sha": "7e8fc6189eec5ef302f77af37bfd1db86df7b1c7",
+  "prompts": {
+    "5e62f648461b654a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "38e5d398-385b-40c3-8384-cbdb76270bb9",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "João Melo <jopcmelo@gmail.com>",
+      "messages": [],
+      "total_additions": 7,
+      "total_deletions": 0,
+      "accepted_lines": 7,
+      "overriden_lines": 0
+    }
+  }
+}
