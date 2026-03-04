@@ -111,3 +111,8 @@ fish_add_path -g "/Users/jopcmelo/.git-ai/bin"
 
 # cubic
 fish_add_path /Users/jopcmelo/.cubic/bin
+
+# Linear CLI completions
+if command -q linear
+    linear completions fish | source
+end
