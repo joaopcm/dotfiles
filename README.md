@@ -10,7 +10,13 @@ macOS dev environment configs.
 | git | GPG signing via 1Password, aliases |
 | starship | prompt |
 | aerospace | tiling window manager |
-| claude | Claude Code settings + rules |
+| claude | Claude Code settings, rules, skills |
+| opencode | MCP servers, plugins, OCX profiles |
+| agents | shared AI agent skills (skills.sh) |
+| lazygit | git TUI |
+| lazydocker | docker TUI |
+| wtf | terminal dashboard (1Password tokens) |
+| try-rs | Rust REPL config |
 | BetterDisplay | display management |
 | Mac Mouse Fix | mouse customization |
 | force-audio-input | locks preferred mic as input device |
@@ -76,7 +82,7 @@ cat /tmp/force-audio-input.err            # errors?
 
 ```
 ├── Brewfile              # homebrew packages
-├── install.sh            # install tools
+├── install.sh            # install tools + ocx + opencode plugins
 ├── setup.sh              # symlink configs
 ├── macos.sh              # macOS preferences
 ├── sync.sh               # sync app settings to repo
@@ -85,6 +91,12 @@ cat /tmp/force-audio-input.err            # errors?
 ├── starship/starship.toml
 ├── aerospace/aerospace.toml
 ├── claude/{settings.json,CLAUDE.md,rules/,file-suggestion.sh}
+├── opencode/{opencode.json,ocx.jsonc,plugin/,plugins/,profiles/}
+├── agents/{.skill-lock.json,skills/}
+├── lazygit/config.yml
+├── lazydocker/config.yml
+├── wtf/config.yml
+├── try-rs/config.toml
 ├── scripts/force-audio-input.sh
 ├── launchagents/com.jopcmelo.force-audio-input.plist
 └── preferences/{BetterDisplay,MacMouseFix}.plist

@@ -1,0 +1,158 @@
+{
+  "version": 3,
+  "skills": {
+    "linear-cli": {
+      "source": "schpet/linear-cli",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/schpet/linear-cli.git",
+      "skillPath": "skills/linear-cli/SKILL.md",
+      "skillFolderHash": "a21365909d2155713bc528e27fb7498149a2d212",
+      "pluginName": "linear-cli",
+      "installedAt": "2026-03-04T12:53:59.192Z",
+      "updatedAt": "2026-03-04T12:53:59.192Z"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "c2f31172b6f256272305a5e6e7228b258446899f",
+      "installedAt": "2026-03-04T12:54:05.830Z",
+      "updatedAt": "2026-03-04T12:54:05.830Z"
+    },
+    "email-best-practices": {
+      "source": "resend/email-best-practices",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/resend/email-best-practices.git",
+      "skillPath": "SKILL.md",
+      "skillFolderHash": "3a7e803add65c599ff1f7c683cbc587d75fe082c",
+      "installedAt": "2026-03-04T13:03:07.679Z",
+      "updatedAt": "2026-03-04T13:03:07.679Z"
+    },
+    "react-email": {
+      "source": "resend/react-email",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/resend/react-email.git",
+      "skillPath": "skills/react-email/SKILL.md",
+      "skillFolderHash": "266cd902dc59e8bf751c9a528d6c7ac8537e1fc7",
+      "installedAt": "2026-03-04T13:05:07.366Z",
+      "updatedAt": "2026-03-04T13:05:07.366Z"
+    },
+    "resend": {
+      "source": "resend/resend-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/resend/resend-skills.git",
+      "skillPath": "SKILL.md",
+      "skillFolderHash": "c1dcbbf8b8e6bbb2f8a9fe477773bcd0c4caf333",
+      "installedAt": "2026-03-04T13:05:25.932Z",
+      "updatedAt": "2026-03-04T13:05:25.932Z"
+    },
+    "resend-design-skills": {
+      "source": "resend/design-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/resend/design-skills.git",
+      "skillPath": "SKILL.md",
+      "skillFolderHash": "3574148a1005d9340d0ee8d18e3db83a56c73701",
+      "installedAt": "2026-03-04T13:09:07.888Z",
+      "updatedAt": "2026-03-04T13:09:07.888Z"
+    },
+    "agent-browser": {
+      "source": "vercel-labs/agent-browser",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-browser.git",
+      "skillPath": "skills/agent-browser/SKILL.md",
+      "skillFolderHash": "368263b629b1c1af2abd68ff2e45fa40ead82601",
+      "pluginName": "agent-browser",
+      "installedAt": "2026-03-04T13:09:18.503Z",
+      "updatedAt": "2026-03-04T13:09:18.503Z"
+    },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "skillFolderHash": "928950704df8a8b885c03de5da626331e6f29cf8",
+      "pluginName": "example-skills",
+      "installedAt": "2026-03-04T13:09:59.168Z",
+      "updatedAt": "2026-03-04T13:12:33.087Z"
+    },
+    "remotion-best-practices": {
+      "source": "remotion-dev/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/remotion-dev/skills.git",
+      "skillPath": "skills/remotion/SKILL.md",
+      "skillFolderHash": "666980630dc910c6b623f3bab13280af47d6995e",
+      "installedAt": "2026-03-04T13:10:11.162Z",
+      "updatedAt": "2026-03-04T13:10:11.162Z"
+    },
+    "vercel-react-best-practices": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/react-best-practices/SKILL.md",
+      "skillFolderHash": "fce8b5a24ff4ff2fc5db6aa1051e03b53c6b5bf1",
+      "installedAt": "2026-03-04T13:11:04.686Z",
+      "updatedAt": "2026-03-04T13:11:04.686Z"
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/web-design-guidelines/SKILL.md",
+      "skillFolderHash": "3116f3e62dbd02b44a598b1aa690d2a8938e8f89",
+      "installedAt": "2026-03-04T13:11:14.437Z",
+      "updatedAt": "2026-03-04T13:11:14.437Z"
+    },
+    "vercel-composition-patterns": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/composition-patterns/SKILL.md",
+      "skillFolderHash": "bf90d0a4b83ea054653350f9c67f6de235d3a368",
+      "installedAt": "2026-03-04T13:11:31.752Z",
+      "updatedAt": "2026-03-04T13:11:31.752Z"
+    },
+    "next-best-practices": {
+      "source": "vercel-labs/next-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/next-skills.git",
+      "skillPath": "skills/next-best-practices/SKILL.md",
+      "skillFolderHash": "ad17eb27952b39a6ab0061bd50e8a2213b63a3ec",
+      "installedAt": "2026-03-04T13:11:43.341Z",
+      "updatedAt": "2026-03-04T13:11:43.341Z"
+    },
+    "slack-gif-creator": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/slack-gif-creator/SKILL.md",
+      "skillFolderHash": "d5cd683598c6ac0174bdb3b3b5be1dfc35430c12",
+      "pluginName": "example-skills",
+      "installedAt": "2026-03-04T13:12:56.910Z",
+      "updatedAt": "2026-03-04T13:12:56.910Z"
+    },
+    "copywriting": {
+      "source": "coreyhaines31/marketingskills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
+      "skillPath": "skills/copywriting/SKILL.md",
+      "skillFolderHash": "0bef7af6d4994302db21de02a4b6460887fd5880",
+      "pluginName": "marketing-skills",
+      "installedAt": "2026-03-04T13:52:18.180Z",
+      "updatedAt": "2026-03-04T13:52:18.180Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "cline",
+    "codex",
+    "cursor",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-cli",
+    "opencode"
+  ]
+}
