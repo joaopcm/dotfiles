@@ -140,6 +140,15 @@
       "pluginName": "marketing-skills",
       "installedAt": "2026-03-04T13:52:18.180Z",
       "updatedAt": "2026-03-04T13:52:18.180Z"
+    },
+    "gh-cli": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/github/awesome-copilot.git",
+      "skillPath": "skills/gh-cli/SKILL.md",
+      "skillFolderHash": "437437f7f20bcdbbdb3081cf164435a388c0a39a",
+      "installedAt": "2026-03-05T12:39:23.510Z",
+      "updatedAt": "2026-03-05T12:39:23.510Z"
     }
   },
   "dismissed": {
