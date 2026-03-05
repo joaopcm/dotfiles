@@ -1,6 +1,7 @@
 # Taps
 tap "anomalyco/tap"
 tap "marcus/tap"
+tap "common-fate/granted"
 tap "schpet/tap"
 
 # Core tools
@@ -35,6 +36,7 @@ brew "marcus/tap/nightshift"
 brew "schpet/tap/linear"
 
 # AWS/Cloud
+brew "awscli"
 brew "granted"
 
 # Secrets
