@@ -1,0 +1,23 @@
+Brewfile
+  202bfa717e0e6a4a 32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.8",
+  "base_commit_sha": "8f3fb4e1f58b1ff318e352b5b7c50c7e10d6805a",
+  "prompts": {
+    "202bfa717e0e6a4a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b93206e3-f451-4aaf-b50f-7ea8760ea944",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "João Melo <jopcmelo@gmail.com>",
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 0,
+      "accepted_lines": 1,
+      "overriden_lines": 0
+    }
+  }
+}
