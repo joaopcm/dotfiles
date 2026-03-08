@@ -149,6 +149,15 @@
       "skillFolderHash": "437437f7f20bcdbbdb3081cf164435a388c0a39a",
       "installedAt": "2026-03-05T12:39:23.510Z",
       "updatedAt": "2026-03-05T12:39:23.510Z"
+    },
+    "humanizer": {
+      "source": "blader/humanizer",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/blader/humanizer.git",
+      "skillPath": "SKILL.md",
+      "skillFolderHash": "d8085c7da5ddb9a179572837d4806b68cde3e9ff",
+      "installedAt": "2026-03-06T19:33:33.689Z",
+      "updatedAt": "2026-03-06T19:35:40.522Z"
     }
   },
   "dismissed": {
@@ -162,6 +171,7 @@
     "gemini-cli",
     "github-copilot",
     "kimi-cli",
-    "opencode"
+    "opencode",
+    "claude-code"
   ]
 }
