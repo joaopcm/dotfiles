@@ -1,48 +1,8 @@
 {
-  "alwaysThinkingEnabled": true,
-  "enabledPlugins": {
-    "claude-mem@thedotmack": true,
-    "code-review@claude-plugins-official": true,
-    "code-simplifier@claude-plugins-official": true,
-    "commit-commands@claude-plugins-official": true,
-    "context7-plugin@context7-marketplace": true,
-    "context7@claude-plugins-official": true,
-    "feature-dev@claude-plugins-official": true,
-    "frontend-design@claude-plugins-official": true,
-    "linear@claude-plugins-official": true,
-    "pr-review-toolkit@claude-plugins-official": true,
-    "superpowers@claude-plugins-official": true,
-    "typescript-lsp@claude-plugins-official": true
-  },
   "fileSuggestion": {
-    "command": "~/.claude/file-suggestion.sh",
-    "type": "command"
+    "type": "command",
+    "command": "~/.claude/file-suggestion.sh"
   },
-  "hooks": {
-    "PostToolUse": [
-      {
-        "hooks": [
-          {
-            "command": "/Users/jopcmelo/.git-ai/bin/git-ai checkpoint claude --hook-input stdin",
-            "type": "command"
-          }
-        ],
-        "matcher": "Write|Edit|MultiEdit"
-      }
-    ],
-    "PreToolUse": [
-      {
-        "hooks": [
-          {
-            "command": "/Users/jopcmelo/.git-ai/bin/git-ai checkpoint claude --hook-input stdin",
-            "type": "command"
-          }
-        ],
-        "matcher": "Write|Edit|MultiEdit"
-      }
-    ]
-  },
-  "model": "opus[1m]",
   "permissions": {
     "allow": [
       "Bash(gh pr view:*)",
@@ -94,9 +54,53 @@
     ],
     "defaultMode": "plan"
   },
+  "model": "opus[1m]",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/jopcmelo/.git-ai/bin/git-ai checkpoint claude --hook-input stdin"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/jopcmelo/.git-ai/bin/git-ai checkpoint claude --hook-input stdin"
+          }
+        ]
+      }
+    ]
+  },
   "statusLine": {
+    "type": "command",
     "command": "npx -y ccstatusline@latest",
-    "padding": 0,
-    "type": "command"
-  }
+    "padding": 0
+  },
+  "enabledPlugins": {
+    "claude-mem@thedotmack": false,
+    "code-review@claude-plugins-official": true,
+    "code-simplifier@claude-plugins-official": true,
+    "commit-commands@claude-plugins-official": true,
+    "context7-plugin@context7-marketplace": true,
+    "context7@claude-plugins-official": true,
+    "feature-dev@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true,
+    "linear@claude-plugins-official": true,
+    "pr-review-toolkit@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true
+  },
+  "alwaysThinkingEnabled": true,
+  "effortLevel": "medium",
+  "fastMode": true,
+  "voiceEnabled": true,
+  "skipDangerousModePermissionPrompt": true
 }

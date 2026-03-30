@@ -17,6 +17,7 @@ alias aerospaceconfig="cursor ./aerospace/aerospace.toml"
 alias claudeconfig="cursor ./claude"
 alias deploy-production="g co main && g up && g co production && g up && g pull --rebase origin main"
 alias assume="source (brew --prefix)/bin/assume.fish"
+alias cc="ENABLE_TOOL_SEARCH=true claude --enable-auto-mode"
 
 # Starship
 starship init fish | source

@@ -6,10 +6,10 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/schpet/linear-cli.git",
       "skillPath": "skills/linear-cli/SKILL.md",
-      "skillFolderHash": "a21365909d2155713bc528e27fb7498149a2d212",
+      "skillFolderHash": "db09ec339c22dcdb502387b5a38ead0b939532c0",
       "pluginName": "linear-cli",
       "installedAt": "2026-03-04T12:53:59.192Z",
-      "updatedAt": "2026-03-04T12:53:59.192Z"
+      "updatedAt": "2026-03-13T17:50:45.234Z"
     },
     "find-skills": {
       "source": "vercel-labs/skills",
@@ -158,6 +158,66 @@
       "skillFolderHash": "d8085c7da5ddb9a179572837d4806b68cde3e9ff",
       "installedAt": "2026-03-06T19:33:33.689Z",
       "updatedAt": "2026-03-06T19:35:40.522Z"
+    },
+    "inngest-events": {
+      "source": "inngest/inngest-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inngest/inngest-skills.git",
+      "skillPath": "skills/inngest-events/SKILL.md",
+      "skillFolderHash": "888aa15ab46eb11a2fa727eb0aa8a5d18912ac27",
+      "pluginName": "inngest-skills",
+      "installedAt": "2026-03-16T17:48:30.592Z",
+      "updatedAt": "2026-03-16T17:48:30.592Z"
+    },
+    "inngest-durable-functions": {
+      "source": "inngest/inngest-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inngest/inngest-skills.git",
+      "skillPath": "skills/inngest-durable-functions/SKILL.md",
+      "skillFolderHash": "058d784de6fae429728ce389ed3130d5359c3e1f",
+      "pluginName": "inngest-skills",
+      "installedAt": "2026-03-16T17:48:39.138Z",
+      "updatedAt": "2026-03-16T17:48:39.138Z"
+    },
+    "inngest-flow-control": {
+      "source": "inngest/inngest-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inngest/inngest-skills.git",
+      "skillPath": "skills/inngest-flow-control/SKILL.md",
+      "skillFolderHash": "a23d3c7ca884e0d3db113c0e726366df2d4b1c4c",
+      "pluginName": "inngest-skills",
+      "installedAt": "2026-03-16T17:48:48.960Z",
+      "updatedAt": "2026-03-16T17:48:48.960Z"
+    },
+    "inngest-steps": {
+      "source": "inngest/inngest-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inngest/inngest-skills.git",
+      "skillPath": "skills/inngest-steps/SKILL.md",
+      "skillFolderHash": "33c2bca265139e487ef1e14f536f7dbf621d9347",
+      "pluginName": "inngest-skills",
+      "installedAt": "2026-03-16T17:48:58.390Z",
+      "updatedAt": "2026-03-16T17:48:58.390Z"
+    },
+    "inngest-setup": {
+      "source": "inngest/inngest-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inngest/inngest-skills.git",
+      "skillPath": "skills/inngest-setup/SKILL.md",
+      "skillFolderHash": "d46c6df7f16c0338476f48875eff6008e3a90c4f",
+      "pluginName": "inngest-skills",
+      "installedAt": "2026-03-16T17:49:14.612Z",
+      "updatedAt": "2026-03-16T17:49:14.612Z"
+    },
+    "inngest-middleware": {
+      "source": "inngest/inngest-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inngest/inngest-skills.git",
+      "skillPath": "skills/inngest-middleware/SKILL.md",
+      "skillFolderHash": "5f9e41c3bcd939d7ede90674912a85b9356424ba",
+      "pluginName": "inngest-skills",
+      "installedAt": "2026-03-16T17:49:23.009Z",
+      "updatedAt": "2026-03-16T17:49:23.009Z"
     }
   },
   "dismissed": {
@@ -172,6 +232,7 @@
     "github-copilot",
     "kimi-cli",
     "opencode",
+    "warp",
     "claude-code"
   ]
 }
