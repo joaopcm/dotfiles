@@ -18,6 +18,7 @@ alias claudeconfig="cursor ./claude"
 alias deploy-production="g co main && g up && g co production && g up && g pull --rebase origin main"
 alias assume="source (brew --prefix)/bin/assume.fish"
 alias cc="ENABLE_TOOL_SEARCH=true claude --enable-auto-mode"
+alias gtr="git gtr"
 
 # Starship
 starship init fish | source
@@ -99,19 +100,13 @@ customDomains = [\"$subdomain.frp.jopcmelo.dev\"]" > $config_file
 end
 
 # Editor
-set -gx EDITOR cursor
-set -gx VISUAL cursor
+set -gx EDITOR zed
+set -gx VISUAL zed
 
 # Default directory
 if status is-interactive && test "$PWD" = "$HOME"
     cd ~/Developer
 end
-
-# Added by git-ai installer on seg  2 mar 2026 09:52:35 -03
-fish_add_path -g "/Users/jopcmelo/.git-ai/bin"
-
-# cubic
-fish_add_path /Users/jopcmelo/.cubic/bin
 
 # Linear CLI completions
 if command -q linear

@@ -29,3 +29,9 @@
 	autoSetupRemote = true
 [pull]
 	rebase = false
+[gtr "editor"]
+	default = zed
+[gtr "ai"]
+	default = claude
+[gtr "hook"]
+	postCreate = pnpm install
