@@ -11,14 +11,13 @@ alias ld="lazydocker"
 alias try="try-rs"
 alias gp="g p"
 alias gaic="g diff | pbcopy; open raycast://ai-commands/write-commit-message"
-alias gitconfig="cursor ./git/config"
-alias fishconfig="cursor ./fish/config.fish"
-alias aerospaceconfig="cursor ./aerospace/aerospace.toml"
-alias claudeconfig="cursor ./claude"
+alias gitconfig="zed ./git/config"
+alias fishconfig="zed ./fish/config.fish"
+alias aerospaceconfig="zed ./aerospace/aerospace.toml"
+alias claudeconfig="zed ./claude"
 alias deploy-production="g co main && g up && g co production && g up && g pull --rebase origin main"
 alias assume="source (brew --prefix)/bin/assume.fish"
-alias cc="ENABLE_TOOL_SEARCH=true claude --enable-auto-mode"
-alias gtr="git gtr"
+alias cc="CLAUDE_CODE_NO_FLICKER=true ENABLE_TOOL_SEARCH=true claude --dangerously-skip-permissions"
 
 # Starship
 starship init fish | source
@@ -112,3 +111,16 @@ end
 if command -q linear
     linear completions fish | source
 end
+
+# git-gtr shell integration
+function gtr
+  if test (count $argv) -gt 0; and test "$argv[1]" = "cd"
+    set -l dir (command git gtr go $argv[2..])
+    and cd $dir
+  else
+    command git gtr $argv
+  end
+end
+
+# Forward completions to gtr wrapper
+complete -c gtr -w git-gtr

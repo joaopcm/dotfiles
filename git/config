@@ -35,3 +35,4 @@
 	default = claude
 [gtr "hook"]
 	postCreate = pnpm install
+	postCreate = doppler setup --no-interactive

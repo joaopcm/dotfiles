@@ -122,60 +122,57 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
 # =============================================================================
-# Default Editor (Cursor)
+# Default Editor (Zed)
 # =============================================================================
 
-# Set Cursor as default for code files
-CURSOR_ID="com.todesktop.230313mzl4w4u92"
+# Set Zed as default for code files
+ZED_ID="dev.zed.Zed"
 
 # Programming languages
-duti -s "$CURSOR_ID" .c all 2>/dev/null
-duti -s "$CURSOR_ID" .cpp all 2>/dev/null
-duti -s "$CURSOR_ID" .h all 2>/dev/null
-duti -s "$CURSOR_ID" .py all 2>/dev/null
-duti -s "$CURSOR_ID" .js all 2>/dev/null
-duti -s "$CURSOR_ID" .ts all 2>/dev/null
-duti -s "$CURSOR_ID" .jsx all 2>/dev/null
-duti -s "$CURSOR_ID" .tsx all 2>/dev/null
-duti -s "$CURSOR_ID" .go all 2>/dev/null
-duti -s "$CURSOR_ID" .rs all 2>/dev/null
-duti -s "$CURSOR_ID" .java all 2>/dev/null
-duti -s "$CURSOR_ID" .php all 2>/dev/null
-duti -s "$CURSOR_ID" .rb all 2>/dev/null
-duti -s "$CURSOR_ID" .swift all 2>/dev/null
+duti -s "$ZED_ID" .c all 2>/dev/null
+duti -s "$ZED_ID" .cpp all 2>/dev/null
+duti -s "$ZED_ID" .h all 2>/dev/null
+duti -s "$ZED_ID" .py all 2>/dev/null
+duti -s "$ZED_ID" .js all 2>/dev/null
+duti -s "$ZED_ID" .ts all 2>/dev/null
+duti -s "$ZED_ID" .jsx all 2>/dev/null
+duti -s "$ZED_ID" .tsx all 2>/dev/null
+duti -s "$ZED_ID" .go all 2>/dev/null
+duti -s "$ZED_ID" .rs all 2>/dev/null
+duti -s "$ZED_ID" .java all 2>/dev/null
+duti -s "$ZED_ID" .php all 2>/dev/null
+duti -s "$ZED_ID" .rb all 2>/dev/null
+duti -s "$ZED_ID" .swift all 2>/dev/null
 
 # Config/markup
-duti -s "$CURSOR_ID" .json all 2>/dev/null
-duti -s "$CURSOR_ID" .yaml all 2>/dev/null
-duti -s "$CURSOR_ID" .yml all 2>/dev/null
-duti -s "$CURSOR_ID" .toml all 2>/dev/null
-duti -s "$CURSOR_ID" .xml all 2>/dev/null
-duti -s "$CURSOR_ID" .md all 2>/dev/null
-duti -s "$CURSOR_ID" .txt all 2>/dev/null
+duti -s "$ZED_ID" .json all 2>/dev/null
+duti -s "$ZED_ID" .yaml all 2>/dev/null
+duti -s "$ZED_ID" .yml all 2>/dev/null
+duti -s "$ZED_ID" .toml all 2>/dev/null
+duti -s "$ZED_ID" .xml all 2>/dev/null
+duti -s "$ZED_ID" .md all 2>/dev/null
+duti -s "$ZED_ID" .txt all 2>/dev/null
 
 # Shell/scripts
-duti -s "$CURSOR_ID" .sh all 2>/dev/null
-duti -s "$CURSOR_ID" .bash all 2>/dev/null
-duti -s "$CURSOR_ID" .zsh all 2>/dev/null
-duti -s "$CURSOR_ID" .fish all 2>/dev/null
-duti -s "$CURSOR_ID" public.shell-script all 2>/dev/null
+duti -s "$ZED_ID" .sh all 2>/dev/null
+duti -s "$ZED_ID" .bash all 2>/dev/null
+duti -s "$ZED_ID" .zsh all 2>/dev/null
+duti -s "$ZED_ID" .fish all 2>/dev/null
+duti -s "$ZED_ID" public.shell-script all 2>/dev/null
 
 # Web
-duti -s "$CURSOR_ID" .html all 2>/dev/null
-duti -s "$CURSOR_ID" .css all 2>/dev/null
-duti -s "$CURSOR_ID" .scss all 2>/dev/null
+duti -s "$ZED_ID" .html all 2>/dev/null
+duti -s "$ZED_ID" .css all 2>/dev/null
+duti -s "$ZED_ID" .scss all 2>/dev/null
 
 # Misc
-duti -s "$CURSOR_ID" .env all 2>/dev/null
-duti -s "$CURSOR_ID" .gitignore all 2>/dev/null
-duti -s "$CURSOR_ID" public.plain-text all 2>/dev/null
+duti -s "$ZED_ID" .env all 2>/dev/null
+duti -s "$ZED_ID" .gitignore all 2>/dev/null
+duti -s "$ZED_ID" public.plain-text all 2>/dev/null
 
 # =============================================================================
 # Display Scaling
 # =============================================================================
-
-# External 34" ultrawide
-displayplacer "id:9B1AAFCC-12F0-4BCF-974A-5A8C5D7ACF0E res:3440x1440 hz:100 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0" 2>/dev/null || true
 
 # Built-in MacBook display (compact scaling)
 displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1800x1169 hz:120 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0" 2>/dev/null || true
